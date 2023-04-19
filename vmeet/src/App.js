@@ -1,28 +1,49 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">VMeet Video Conference Anywhere
-        <br class="hidden lg:inline-block"/>Create / Join Meeting Rooms
-      </h1>
-      <div class="mb-4">
-      
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter Link"/>
-    </div>
-      <div class="flex justify-center">
-        <button class="inline-flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Create</button>
-        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Join</button>
+    <div class="h-screen md:flex">
+	<div
+		class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-purple-800 to-purple-900 i justify-around items-center hidden">
+		<div>
+			<h1 class="text-white font-bold text-4xl font-sans">VMeet</h1>
+			<p class="text-white mt-1">Video Conferencing Anywhere</p>
+			
+		</div>
+		<div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+	</div>
+	<div class="flex md:w-1/2 justify-center py-5 items-center bg-white" id='boxcontain'>
+		<form class="bg-white">
+			<h1 class="text-gray-800 font-bold text-2xl mb-1">Hello!</h1>
+			<p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p>
+			
+				
+					<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+							viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+						</svg>
+						<input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Email Address" />
       </div>
-    </div>
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-      <img class="object-cover object-center rounded" alt="hero" src="https://img.freepik.com/free-vector/online-meetup-abstract-concept-vector-illustration-conference-call-join-meetup-group-video-call-online-service-distance-communication-informal-meeting-members-networking-abstract-metaphor_335657-2920.jpg?w=2000"/>
-    </div>
-  </div>
-</section>
+						<div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+									clip-rule="evenodd" />
+							</svg>
+							<input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Password" />
+      </div>
+							<button type="submit" class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">Login</button>
+							<span class="text-sm ml-2 hover:text-blue-500 cursor-pointer">Forgot Password ?</span>
+		</form>
+	</div>
+</div>
   );
 }
 
